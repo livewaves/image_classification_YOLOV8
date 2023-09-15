@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import numpy as np
 
 model = YOLO('./runs/classify/train2/weights/last.pt')
-results = model('./waether_dataset/val/sunrise/sunrise310.jpg')
+results = model('./weather_dataset/val/sunrise/sunrise310.jpg')
 print(type(results))
 print(results)
 names_dict = results[0].names
